@@ -22,14 +22,15 @@ exec code
 exec spotify
 
 # hotkeys
-bindsym $mod+Return exec i3-sensible-terminal # terminal
+bindsym $mod+Return exec kitty # terminal
 bindsym $mod+d exec --no-startup-id dmenu_run # dmenu
 bindsym $mod+shift+x exec i3lock --color "#000000" # i3lock
-bindsym $mod+shift+g exec google-chrome-stable # spotify
+bindsym $mod+shift+g exec google-chrome-stable # chrome
 bindsym $mod+shift+v exec code # vscode
 bindsym $mod+shift+m exec spotify # spotify
 
-exec_always xautolock -locker "i3lock --color 000000" -bell 0 -corners -detectsleep
+# xautolock
+exec_always xautolock -locker "i3lock -c 000000" -bell 0 -corners -detectsleep -time 10
 
 # brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
@@ -56,7 +57,7 @@ bar {
 	}
 	}
 
-#nm-applet
+# nm-applet
 exec_always nm-applet
 # blueman-applet
 exec_always blueman-applet
