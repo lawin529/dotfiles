@@ -1,4 +1,4 @@
-# shialzen i3blocks config
+# i3blocks config
 
 # global properties
 command=/home/w/.config/i3blocks/$BLOCK_NAME/$BLOCK_NAME

@@ -29,9 +29,11 @@ bindsym $mod+shift+g exec google-chrome-stable # spotify
 bindsym $mod+shift+v exec code # vscode
 bindsym $mod+shift+m exec spotify # spotify
 
+exec_always xautolock -locker "i3lock --color 000000" -bell 0 -corners -detectsleep
+
 # brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
 
 # picom
 exec_always picom
