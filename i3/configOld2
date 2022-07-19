@@ -24,13 +24,13 @@ exec spotify
 # hotkeys
 bindsym $mod+Return exec kitty # terminal
 bindsym $mod+d exec --no-startup-id dmenu_run # dmenu
+bindsym $mod+shift+x exec i3lock --color "#000000" # i3lock
 bindsym $mod+shift+g exec google-chrome-stable # chrome
 bindsym $mod+shift+v exec code # vscode
 bindsym $mod+shift+m exec spotify # spotify
 
 # xautolock
-exec --no-startup-id xautolock -corners -000 -time 10 -locker "i3lock -c 000000" &
-bindsym $mod+shift+x exec i3lock -c 000000 && systemctl suspend
+exec_always xautolock -locker "i3lock -c 000000" -bell 0 -corners -detectsleep -time 10
 
 # brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
