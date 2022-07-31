@@ -15,7 +15,7 @@ font pango:SourceCodePro-Regular 10
 client.focused #6D0C0C #C01D2A #FFFFFF #6D0C0C
 
 # Startup programs
-exec google-chrome-stable
+exec brave
 exec kitty
 exec kitty
 exec code
@@ -24,12 +24,12 @@ exec spotify
 # hotkeys
 bindsym $mod+Return exec kitty # terminal
 bindsym $mod+d exec --no-startup-id dmenu_run # dmenu
-bindsym $mod+shift+g exec google-chrome-stable # chrome
+bindsym $mod+shift+g exec brave # brave
 bindsym $mod+shift+v exec code # vscode
 bindsym $mod+shift+m exec spotify # spotify
 
 # xautolock
-exec --no-startup-id xautolock -corners -000 -time 10 -locker "i3lock -c 000000" &
+exec --no-startup-id xautolock -corners -000 -time 10 -locker 'i3lock -c 000000' &
 bindsym $mod+shift+x exec i3lock -c 000000 && systemctl suspend
 
 # brightness controls
@@ -77,7 +77,7 @@ set $ws9 "9"
 set $ws10 "10: Music"
 
 # program ws
-assign [class="Google-chrome"] $ws1
+assign [class="Brave-browser"] $ws1
 assign [class="kitty"] $ws2
 assign [class="code-oss"] $ws3
 assign [class="discord"] $ws5
