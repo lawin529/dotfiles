@@ -29,7 +29,7 @@ bindsym $mod+shift+v exec code # vscode
 bindsym $mod+shift+m exec spotify # spotify
 
 # xautolock
-exec --no-startup-id xautolock -corners -000 -time 10 -locker 'i3lock -c 000000' &
+exec --no-startup-id xautolock -corners ---- -time 10 -locker 'i3lock -c 000000' &
 bindsym $mod+shift+x exec i3lock -c 000000 && systemctl suspend
 
 # brightness controls
