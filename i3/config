@@ -18,7 +18,6 @@ client.focused #6D0C0C #C01D2A #FFFFFF #6D0C0C
 exec brave
 exec kitty
 exec kitty
-exec code
 exec spotify
 
 # hotkeys
@@ -55,7 +54,7 @@ bar {
 		urgent_workspace #2F343A #26A26A #FFFFFF
 		binding_mode #2F343A #813E9C #FFFFFF
 	}
-	}
+}
 
 # nm-applet
 exec_always nm-applet
@@ -67,20 +66,18 @@ exec_always redshift -P -O 5500
 # workspaces
 set $ws1 "1: Web"
 set $ws2 "2: Term"
-set $ws3 "3: VSCode"
+set $ws3 "3"
 set $ws4 "4"
-set $ws5 "5: Discord"
+set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
-set $ws9 "9"
+set $ws9 "9: Discord"
 set $ws10 "10: Music"
 
 # program ws
-assign [class="Brave-browser"] $ws1
 assign [class="kitty"] $ws2
-assign [class="code-oss"] $ws3
-assign [class="discord"] $ws5
+assign [class="discord"] $ws9
 for_window [class="Spotify"] move to workspace $ws10
 
 # ---------- essential i3 config ----------
