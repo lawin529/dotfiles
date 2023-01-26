@@ -18,7 +18,6 @@ client.focused #6D0C0C #C01D2A #FFFFFF #6D0C0C
 exec brave
 exec kitty
 exec kitty
-exec code
 exec spotify
 
 # hotkeys
