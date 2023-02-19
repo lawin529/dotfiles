@@ -19,6 +19,7 @@ exec brave
 exec kitty
 exec kitty
 exec spotify
+exec --no-startup-id ksnip
 
 # hotkeys
 bindsym $mod+Return exec kitty # terminal
