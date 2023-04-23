@@ -1,10 +1,13 @@
 # winson's dotfiles
 
+dotfiles for my arch linux setup
+
 - [winson's dotfiles](#winsons-dotfiles)
-  - [i3 config](#i3-config)
-  - [neovim config + dependencies](#neovim-config--dependencies)
-  - [xorg config](#xorg-config)
-  - [picom config](#picom-config)
+	- [i3 config](#i3-config)
+	- [neovim config + dependencies](#neovim-config--dependencies)
+	- [xorg config](#xorg-config)
+	- [picom config](#picom-config)
+	- [lightdm config](#lightdm-config)
 
 ## i3 config
 
@@ -21,6 +24,7 @@ environment programs:
 - redshift
 - pulseaudio
 - [lightdm](https://archlinux.org/packages/?name=lightdm)
+  - lightdm-gtk-greeter
 - neofetch
 - thunar
 - syncthing
@@ -66,3 +70,9 @@ located in `/etc/X11/xorg.conf.d/`
 ## picom config
 
 - setting kitty opacity
+
+## lightdm config
+
+located in `/etc/lightdm/`
+
+- changing background to `lock.jpeg`
