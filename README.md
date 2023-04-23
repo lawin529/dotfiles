@@ -2,12 +2,14 @@
 
 dotfiles for my arch linux setup
 
+![main](docs/main.png)
+
 - [winson's dotfiles](#winsons-dotfiles)
-	- [i3 config](#i3-config)
-	- [neovim config + dependencies](#neovim-config--dependencies)
-	- [xorg config](#xorg-config)
-	- [picom config](#picom-config)
-	- [lightdm config](#lightdm-config)
+  - [i3 config](#i3-config)
+  - [neovim config + dependencies](#neovim-config--dependencies)
+  - [xorg config](#xorg-config)
+  - [picom config](#picom-config)
+  - [lightdm config](#lightdm-config)
 
 ## i3 config
 
@@ -37,13 +39,17 @@ required programs:
 
 - brave
 - kitty
-- ksnip
 - [discord](https://aur.archlinux.org/packages/discord_arch_electron)
 - [vscode](https://aur.archlinux.org/packages/visual-studio-code-bin)
 - okular
 - [spotify](https://aur.archlinux.org/packages/spotify)
+- flameshot
 
 ## neovim config + dependencies
+
+neovim mostly just for small edits and orgmode
+
+![vim](docs/vim.png)
 
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [packer.nvim](https://github.com/wbthomason/packer.nvim)
