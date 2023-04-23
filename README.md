@@ -21,15 +21,23 @@ environment programs:
 - redshift
 - pulseaudio
 - [lightdm](https://archlinux.org/packages/?name=lightdm)
+- neofetch
+- thunar
+- syncthing
+- syncthing-gtk
+- noto-fonts
+- ttf-font-awesome
+- fish
 
 required programs:
 
 - brave
 - kitty
-- spotify
 - ksnip
-- discord
+- [discord](https://aur.archlinux.org/packages/discord_arch_electron)
 - [vscode](https://aur.archlinux.org/packages/visual-studio-code-bin)
+- okular
+- [spotify](https://aur.archlinux.org/packages/spotify)
 
 ## neovim config + dependencies
 
@@ -47,6 +55,8 @@ required programs:
   - [orgmode](https://github.com/nvim-orgmode/orgmode)
 
 ## xorg config
+
+located in `/etc/X11/xorg.conf.d/`
 
 - changed touchpad scroll direction
 - changed trackpoint scroll direction
