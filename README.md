@@ -30,7 +30,7 @@ environment programs:
 - neofetch
 - thunar
 - syncthing
-- syncthing-gtk
+- syncthingtray
 - noto-fonts
 - ttf-font-awesome
 - fish

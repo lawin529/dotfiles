@@ -41,8 +41,8 @@ exec_always picom
 # wallpaper
 exec_always feh --bg-scale $HOME/Pictures/wallpaper.jpeg
 
-# syncthing-gtk
-exec --no-startup-id syncthing-gtk
+# syncthing
+exec --no-startup-id syncthingtray
 
 # i3blocks
 bar {
