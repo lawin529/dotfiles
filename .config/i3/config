@@ -15,25 +15,27 @@ font pango:SourceCodePro-Regular 10
 client.focused #6D0C0C #C01D2A #FFFFFF #6D0C0C
 
 # Startup programs
-exec brave
+exec firefox
 exec kitty
 exec kitty
-exec --no-startup-id flameshot
 
 # hotkeys
 bindsym $mod+Return exec kitty # terminal
 bindsym $mod+d exec --no-startup-id dmenu_run # dmenu
-bindsym $mod+shift+g exec brave # brave
+bindsym $mod+shift+g exec firefox # firefox
 bindsym $mod+shift+v exec code # vscode
 bindsym $mod+shift+m exec spotify # spotify
+bindsym $mod+shift+s exec flameshot gui # flameshot
 
 # xautolock
-exec --no-startup-id xautolock -corners ---- -time 45 -locker 'i3lock -c 000000' &
+exec xautolock -corners '----' -time 45 -locker 'i3lock -c 000000' &
 bindsym $mod+shift+x exec i3lock -c 000000 && systemctl suspend
 
 # brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+bindsym $mod+shift+p exec xbacklight -set 0 # turn off display
+bindsym $mod+shift+o exec xbacklight -set 100 # max out display brightness
 
 # picom
 exec_always picom
@@ -42,7 +44,7 @@ exec_always picom
 exec_always feh --bg-scale $HOME/Pictures/wallpaper.jpeg
 
 # syncthing
-exec --no-startup-id syncthingtray
+exec --no-startup-id syncthing-gtk
 
 # i3blocks
 bar {
