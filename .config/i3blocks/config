@@ -1,0 +1,34 @@
+# i3blocks config
+
+# global properties
+command=/home/w/.config/i3blocks/$BLOCK_NAME/$BLOCK_NAME
+separator_block_width=20
+markup=none
+
+# vol indicator
+[volume-pulseaudio]
+label=🔊: 
+interval=1
+signal=10
+LONG_FORMAT=${VOL}%
+SHORT_FORMAT=${VOL}%
+
+# memory usage
+[memory2]
+label= 
+interval=persist
+markup=pango
+critical=50
+warning=20
+color_critical=#d9534f
+
+# battery indicator
+[battery]
+label=🔋: 
+interval=1
+BAT_NUMBER=0
+
+# date & time
+[time]
+command=date '+%d-%m-%Y %H:%M'
+interval=1

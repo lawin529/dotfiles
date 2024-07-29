@@ -14,7 +14,7 @@ require('nvim-treesitter.configs').setup {
 require('orgmode').setup({
   org_agenda_files = '~/school/org/*',
   org_default_notes_file = '~/school/org/refile.org',
-  org_deadline_warning_days = 21,
+  org_deadline_warning_days = 31,
   org_hide_leading_stars = true,
   org_todo_keywords = { 'TODO', 'QUIZ', 'EXAM', '|', 'DONE', 'WRITTEN' },
   org_todo_keyword_faces = {

@@ -1,5 +1,5 @@
 local status, packer = pcall(require, "packer")
-if(not status) then
+if (not status) then
   print("Packer is not installed")
   return
 end
@@ -29,14 +29,14 @@ packer.startup(function(use)
   use 'hrsh7th/nvim-cmp'
   use 'neovim/nvim-lspconfig'
   use 'jose-elias-alvarez/null-ls.nvim'
-  
-  use {'nvim-treesitter/nvim-treesitter', run = function()
+
+  use { 'nvim-treesitter/nvim-treesitter', run = function()
     require('nvim-treesitter.install').update({ with_sync = true })
   end
   }
 
-  use {'nvim-orgmode/orgmode', config = function()
-    require('orgmode').setup{}
+  use { 'nvim-orgmode/orgmode', config = function()
+    require('orgmode').setup {}
   end
   }
 end)
