@@ -23,7 +23,6 @@ environment programs:
 - feh
 - networkmanager
 - bluetooth / blueman
-- redshift
 - pulseaudio
 - [lightdm](https://archlinux.org/packages/?name=lightdm)
   - lightdm-gtk-greeter
@@ -37,7 +36,7 @@ environment programs:
 
 required programs:
 
-- brave
+- firefox
 - kitty
 - [discord](https://aur.archlinux.org/packages/discord_arch_electron)
 - [vscode](https://aur.archlinux.org/packages/visual-studio-code-bin)
