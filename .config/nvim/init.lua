@@ -1,8 +1,6 @@
 require('base')
 require('plugins')
 
-require('orgmode').setup_ts_grammar()
-
 require('nvim-treesitter.configs').setup {
   highlight = {
     enable = true,
