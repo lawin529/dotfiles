@@ -2,7 +2,7 @@
 
 dotfiles for my arch linux setup
 
-![main](docs/main.png)
+![main](docs/main.jpeg)
 
 - [winson's dotfiles](#winsons-dotfiles)
   - [i3 config](#i3-config)
@@ -13,13 +13,13 @@ dotfiles for my arch linux setup
 
 ## i3 config
 
-environment programs:
+environment packages:
 
 - [yay](https://github.com/Jguer/yay)
 - dmenu-git
 - xautolock
 - xorg-server
-- picom
+- picom-git
 - feh
 - networkmanager
 - bluetooth / blueman
@@ -32,17 +32,23 @@ environment programs:
 - syncthingtray
 - noto-fonts
 - ttf-font-awesome
-- fish
+- fish-git
+- redshift
+- blueman
+  - blueman-applet
+- neovim-git
+  - nvim-packer-git
 
-required programs:
+programs:
 
 - firefox
+- brave
 - kitty
-- [discord](https://aur.archlinux.org/packages/discord_arch_electron)
+- [discord_arch_electron](https://aur.archlinux.org/packages/discord_arch_electron)
 - [vscode](https://aur.archlinux.org/packages/visual-studio-code-bin)
-- okular
+  - code-marketplace
 - [spotify](https://aur.archlinux.org/packages/spotify)
-- flameshot
+- flameshot-git
 
 ## neovim config + dependencies
 
