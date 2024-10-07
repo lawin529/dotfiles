@@ -6,7 +6,7 @@ separator_block_width=20
 markup=none
 
 # vol indicator
-[volume-pulseaudio]
+[volume]
 label=🔊: 
 interval=1
 signal=10

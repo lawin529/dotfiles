@@ -16,6 +16,14 @@ parser_config.org = {
   filetype = 'org',
 }
 
+vim.api.nvim_create_autocmd('ColorScheme', {
+  pattern = '*',
+  callback = function()
+    vim.api.nvim_set_hl(0, '@org.agenda.deadline', { fg = '#FFAAAA' })
+    vim.api.nvim_set_hl(0, '@org.agenda.scheduled', { fg = '#BBFFAA' })
+  end
+})
+
 packer.startup(function(use)
   use 'wbthomason/packer.nvim'
   use {
