@@ -5,13 +5,20 @@ command=/home/w/.config/i3blocks/$BLOCK_NAME/$BLOCK_NAME
 separator_block_width=20
 markup=none
 
+# [timer_and_stopwatch]
+# format=json
+# interval=1
+# DEFAULT_MODE=timer
+# DEFAULT_TIMER=3600
+# TIMER_LABEL= 
+# PLAY_LABEL= 
+# PAUSE_LABEL= P
+
 # vol indicator
-[volume]
-label=🔊: 
-interval=1
-signal=10
-LONG_FORMAT=${VOL}%
-SHORT_FORMAT=${VOL}%
+[volume-pipewire]
+interval=persist
+SUBSCRIBE=1
+USE_ALSA_NAME=1
 
 # memory usage
 [memory2]
@@ -23,12 +30,27 @@ warning=20
 color_critical=#d9534f
 
 # battery indicator
-[battery]
-label=🔋: 
-interval=1
-BAT_NUMBER=0
+[batterybar]
+label=BAT: 
+interval=5
+markup=pango
+min_width=bat: ■■■■■
+
+#[battery]
+#label=🔋: 
+#interval=1
+#BAT_NUMBER=0
 
 # date & time
-[time]
-command=date '+%d-%m-%Y %H:%M'
+[calendar]
 interval=1
+LABEL= 
+DATEFMT=+ %a %D %H:%M
+HEIGHT=200
+WIDTH=220
+
+
+
+# [time]
+# command=date '+%d-%m-%Y %H:%M'
+# interval=1

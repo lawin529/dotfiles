@@ -30,12 +30,11 @@ bindsym $mod+shift+s exec flameshot gui # flameshot
 # xautolock
 exec xautolock -corners '----' -time 45 -locker 'i3lock -c 000000' &
 bindsym $mod+shift+x exec i3lock -c 000000 && systemctl suspend
+bindsym $mod+shift+p exec i3lock -c 000000
 
 # brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
-bindsym $mod+shift+p exec xbacklight -set 0 # turn off display
-bindsym $mod+shift+o exec xbacklight -set 100 # max out display brightness
 
 # picom
 exec_always picom
@@ -60,6 +59,9 @@ bar {
 		binding_mode #2F343A #813E9C #FFFFFF
 	}
 }
+
+# i3blocks calendar
+for_window [class="Yad"] floating enable
 
 # nm-applet
 exec_always nm-applet
