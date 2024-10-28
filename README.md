@@ -54,8 +54,6 @@ programs:
 
 neovim mostly just for small edits and orgmode
 
-![vim](docs/vim.png)
-
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [packer.nvim](https://github.com/wbthomason/packer.nvim)
   - [cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
